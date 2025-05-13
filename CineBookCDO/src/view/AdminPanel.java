@@ -4,6 +4,8 @@ import controller.AdminController;
 import model.Booking;
 import model.Cinema;
 import model.Movie;
+import model.Seat;
+import model.Snack;
 import model.User;
 
 import javax.swing.*;

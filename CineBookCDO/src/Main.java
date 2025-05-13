@@ -1,5 +1,3 @@
-package src;
-
 import view.MainFrame;
 import utils.UIHelper;
 
