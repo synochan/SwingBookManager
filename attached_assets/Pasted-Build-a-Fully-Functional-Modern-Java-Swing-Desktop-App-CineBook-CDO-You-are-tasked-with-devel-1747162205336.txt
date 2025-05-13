@@ -1,0 +1,108 @@
+Build a Fully Functional & Modern Java Swing Desktop App — CineBook CDO 🎬
+You are tasked with developing CineBook CDO, a modern Java Swing-based desktop application that simulates an online cinema ticket booking system for users in Cagayan de Oro (CDO), Philippines.
+
+The application should have a professional-looking GUI using Java Swing, simulate real-world booking operations, and store data using arrays or ArrayLists for simplicity—suitable for a first-year college student.
+
+🧩 Scope Summary
+This is a fully functional prototype, built with a modern user interface, implementing both User and Admin features, and following the MVC (Model-View-Controller) design pattern for structure.
+
+🧱 Technologies & Tools
+Component	Stack
+Language	Java (JDK 8 or higher)
+GUI	Java Swing
+Data Storage	Arrays / ArrayLists
+Build Tool	Manual (via javac) or simple scripts
+IDE	VS Code / IntelliJ IDEA
+Extras	Dialogs & Console Logs for simulation
+
+📁 Required Folder Structure
+bash
+Copy
+Edit
+CineBookCDO/
+├── src/
+│   ├── model/           # Movie, User, Booking, Seat, Snack classes
+│   ├── view/            # All Swing UI files (BookingForm, AdminPanel)
+│   ├── controller/      # BookingController, AdminController
+│   └── Main.java        # Application Entry Point
+├── assets/              # Icons, logos, banners
+├── docs/                # README.txt, Instructions.txt
+└── lib/                 # External JARs (optional)
+🎨 UI Requirements — Modern Design
+Use consistent fonts and spacing
+
+Incorporate images/icons from the /assets folder
+
+Apply custom colors for buttons (e.g., blue for primary, gray for disabled)
+
+Use CardLayout or JTabbedPane for switching between panels
+
+Responsive layout within reason (centered forms, resizable dialogs)
+
+Splash screen with a logo and loading bar (optional)
+
+🧠 Core Functionalities
+👤 User Side:
+ Create account or checkout as guest
+
+ View current movies in 3 cinemas (with filtering)
+
+ Select schedule, seats (Standard/Deluxe), and concessions
+
+ Limit of 6 seats per booking
+
+ Add snacks (Popcorn, Drinks)
+
+ Choose a payment method (GCash, PayMaya, Credit Card) — Simulated
+
+ Show ticket summary (simulate email or SMS confirmation via console popup)
+
+ E-ticket panel with seat info and confirmation number
+
+🔐 Admin Side:
+ Login using hardcoded admin credentials
+
+ Add/edit/delete movie schedules
+
+ Manage seat availability
+
+ View user booking logs
+
+ Simulate exporting reports to .txt (optional)
+
+ Show total sales summary (basic simulation)
+
+💡 Data Simulation Using Arrays
+All data is stored in memory only, using arrays or ArrayList:
+
+java
+Copy
+Edit
+ArrayList<Movie> movies = new ArrayList<>();
+ArrayList<User> users = new ArrayList<>();
+ArrayList<Booking> bookings = new ArrayList<>();
+No database required. Populate sample data at runtime when launching the app.
+
+🔐 Admin Login (Sample)
+java
+Copy
+Edit
+Username: admin
+Password: admin123
+📦 Deliverables
+✅ Working CineBookCDO application
+
+✅ Organized source code using MVC
+
+✅ README.txt with:
+
+How to compile & run
+
+Sample data / login
+
+Simulation notes (payment, email, reports)
+
+✅ Sample screenshots (optional)
+
+✅ Fully working .java files in src/
+
